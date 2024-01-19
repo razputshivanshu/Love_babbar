@@ -218,6 +218,16 @@
 
 //Mapping arrays:
 
+let numbers =[7,8,10,11];
+// let items = numbers.map(function(value){
+//   return 'student_no ' + value;
+// });
+let items = numbers.map(values => 'student_no: '+ values);
+
+console.log(items);
+
+
+
 
 
 
