@@ -145,7 +145,7 @@
 //Homework: Combining and Slicing over objects
 
 
-// ... -> spread order
+// ... -> spread operator
 // let first = [1,2,3];
 // let second = [4,5,6];
 
@@ -159,15 +159,64 @@
 // console.log(combined);
 
 
-let arr = [1,2,3,4,5,6,7,8,9,10];
-for(let value of arr){
-  console.log(value);
-}
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// for(let value of arr){
+//   console.log(value);
+// }
 
-arr.forEach((number)=>console.log(number));
-//SUcessfully written a first arrow function by myself.
+// arr.forEach((number)=>console.log(number));
+// //SUcessfully written a first arrow function by myself.
 
 
+
+
+//// Joining Arrays
+// let numbers = [10,20,30,40,50];
+// const joined = numbers.join(',');
+// console.log(joined);
+
+
+////Split Method
+
+// let message = 'This is my first message';
+// let parts = message.split(' ');
+// console.log(parts);
+
+
+// let joined = parts.join('_');
+// console.log(joined);
+
+
+
+///Sorting Arrys
+
+// let num = [1,23,2,4,53,2,435,2,13,4];
+// num.sort();
+// console.log(num);
+
+// num.reverse();
+// console.log(num);
+
+// let points =[10,30,2,3,5,1,3];
+// points.sort(function(a, b){return a - b});
+// console.log(points);
+
+
+
+//filtering arrays: by using this thing we can add items
+
+// let arr= [1,2,-1,-3,4];
+
+// let filtered = arr.filter((number)=> number >=0);
+// // we don't need to use return with arrow functions.
+// // let filtered = arr.filter(function(value){
+// //   return value>0;
+// // });
+// console.log(filtered);
+
+
+
+//Mapping arrays:
 
 
 
