@@ -105,9 +105,44 @@
 
 //// Emptying an Array
 
-let numbers =[1,2,3,5,6];
-let numbers2=numbers;
+// let numbers =[1,2,3,5,6];
+// let numbers2=numbers;
 
-numbers = [];
-console.log(numbers);
-console.log(numbers2);
+
+
+// //first mehtod
+// // numbers = [];
+// //Adress is copied not the values
+
+// //ANother method and ideal method is this
+// // numbers.length=0;
+
+
+// //Another method
+// numbers.splice(0,numbers.length);
+
+// //Another method is popping until the numbers.length 
+
+// console.log(numbers);
+// console.log(numbers2);
+
+
+//Combining and Slicing Arrays
+
+let first =[1,2,3];
+let second = [4,5,6];
+
+let combined = first.concat(second);
+console.log(combined);
+
+
+
+
+
+
+
+
+
+
+
+
