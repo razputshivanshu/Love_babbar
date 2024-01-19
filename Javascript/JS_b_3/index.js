@@ -129,11 +129,19 @@
 
 //Combining and Slicing Arrays
 
-let first =[1,2,3];
-let second = [4,5,6];
+// let first =[1,2,3];
+// let second = [4,5,6];
 
-let combined = first.concat(second);
-console.log(combined);
+// let combined = first.concat(second);
+// console.log(combined);
+
+// //slice (start index, end index)
+// // it will take end index - 1
+
+// // let sliced=combined.slice(2,5);
+// let sliced = combined.slice(2);
+// console.log(sliced);
+
 
 
 
