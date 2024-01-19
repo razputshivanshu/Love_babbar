@@ -218,11 +218,27 @@
 
 //Mapping arrays:
 
-let numbers =[7,8,10,11];
-// let items = numbers.map(function(value){
-//   return 'student_no ' + value;
+// let numbers =[7,8,10,11];
+// // let items = numbers.map(function(value){
+// //   return 'student_no ' + value;
+// // });
+// let items = numbers.map(values => 'student_no: '+ values);
+
+// console.log(items);
+
+
+let numbers =[1,2,-6,-9];
+let filtered = numbers.filter(value => value <=0);
+
+// let items = filtered.map(function(num){
+//   let obj = {value:num};
+//   return obj;
 // });
-let items = numbers.map(values => 'student_no: '+ values);
+
+let items = filtered.map(num =>{
+  let obj={value:num};
+  return obj;
+});
 
 console.log(items);
 
