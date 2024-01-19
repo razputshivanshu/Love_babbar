@@ -142,7 +142,30 @@
 // let sliced = combined.slice(2);
 // console.log(sliced);
 
+//Homework: Combining and Slicing over objects
 
+
+// ... -> spread order
+// let first = [1,2,3];
+// let second = [4,5,6];
+
+// let combined = [...first,'a', ...second,'b','true'];
+
+// console.log(combined);
+
+
+// //copy 
+// let another = [...combined];
+// console.log(combined);
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+for(let value of arr){
+  console.log(value);
+}
+
+arr.forEach((number)=>console.log(number));
+//SUcessfully written a first arrow function by myself.
 
 
 
