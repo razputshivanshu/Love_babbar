@@ -318,13 +318,74 @@
 
 //we can have multiple parameters in function
 
-function sum(num,...args){
-  console.log(args);
-}
-//by using rest operator we can print in the form of array
-// and by using not rest operator we store in the form of obj and is in the key -> value pairs.
+// function sum(num,...args){
+//   //rest perameter should be the last parameters.
+//   console.log(args);
+// }
+// //by using rest operator we can print in the form of array
+// // and by using not rest operator we store in the form of obj and is in the key -> value pairs.
 
-sum(1,2,3,4,5);
+// sum(1,2,3,4,5);
+
+
+
+
+
+
+//// Default Parameters
+
+//Case: sometime what happens we want to use a deafult value when user doesn't passed any value.
+
+//So in function declaration we will do (p=1000,r=5,y=3)
+
+
+// function interest(p=1000,r=10,y=1){
+//   return (p*r*y)/100;
+// }
+
+// console.log(interest());
+// console.log(interest(1000));
+// console.log(interest(1000,4432));
+// console.log(interest(1000,15,5));
+//console.log(interest(undefined,20,undefined));
+//but it is a bad practice
+
+
+
+
+//// Getter and setter
+
+// let person = {
+//   fName : 'Shivanshu',
+//   lName : 'Chauhan',
+
+//   get fullName(){
+//     return `my name is ${person.fName+' '+person.lName}`;
+//   },
+//   set fullName(value){
+//     let parts = value.split(' ');
+//     this.fName = parts[0];
+//     this.lName = parts[1];
+
+//   }
+// };
+
+// // console.log(person);
+
+// // now we are going to write a fucntion which writes a full name
+
+
+
+// // console.log(fullName());
+
+
+// console.log(person.fullName);
+
+
+// Exceptional Handling
+
+
+
 
 
 
