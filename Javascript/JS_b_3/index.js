@@ -227,26 +227,26 @@
 // console.log(items);
 
 
-let numbers =[1,2,-6,-9];
-// let filtered = numbers.filter(value => value <=0);
+// let numbers =[1,2,-6,-9];
+// // let filtered = numbers.filter(value => value <=0);
 
-// let items = filtered.map(function(num){
-//   let obj = {value:num};
-//   return obj;
-// });
+// // let items = filtered.map(function(num){
+// //   let obj = {value:num};
+// //   return obj;
+// // });
 
-// let items = filtered.map(num =>{
-//   let obj={value:num};
-//   return obj;
-// });
+// // let items = filtered.map(num =>{
+// //   let obj={value:num};
+// //   return obj;
+// // });
 
 
-//Chaining
-let items = numbers
-            .filter(value => value >=0)
-            .map(num=>{value:num});
+// //Chaining
+// let items = numbers
+//             .filter(value => value >=0)
+//             .map(num=>{value:num});
 
-console.log(items);
+// console.log(items);
 
 
 
