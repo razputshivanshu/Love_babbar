@@ -287,22 +287,44 @@
 
 
 //Dynamic language
-let x =1 ;
-x = 'a';
+// let x =1 ;
+// x = 'a';
 
-console.log(x);
+// console.log(x);
 
-function sum(a,b){
-  return a+b;
-};
+// function sum(a,b){
+//   // console.log(arguments);
+//   // return a+b;
+//   let total = 0;
+//   for(let value of arguments)
+//   total = total+value;
+//   return total;
+//   //return a+b; // it will work fine for 2 parameters
+// };
 
-// console.log(sum('a','b'));
-// console.log(sum(1,'b'));
-// console.log(sum(1));
-console.log(sum(1,2,3,4,5));
+// // console.log(sum('a','b'));
+// // console.log(sum(1,'b'));
+// // console.log(sum(1));
+// // console.log(sum(11,12,13,14,15));
+
+// let ans = sum(1,2,3,4,5);
+// console.log(ans);
 
 
 
+
+// rest operator -> ...
+// spread operator -> ... -> concat or copy used for array
+
+//we can have multiple parameters in function
+
+function sum(num,...args){
+  console.log(args);
+}
+//by using rest operator we can print in the form of array
+// and by using not rest operator we store in the form of obj and is in the key -> value pairs.
+
+sum(1,2,3,4,5);
 
 
 
