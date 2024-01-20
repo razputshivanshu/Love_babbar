@@ -249,6 +249,16 @@
 // console.log(items);
 
 
+/////JS Day - 4
+
+//Functions
+
+function printCounting(){
+  console.log("I am going to do all my tasks.");
+
+}
+//function call
+printCounting();
 
 
 
