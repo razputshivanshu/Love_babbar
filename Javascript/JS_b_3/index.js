@@ -253,12 +253,56 @@
 
 //Functions
 
-function printCounting(){
-  console.log("I am going to do all my tasks.");
+// function printCounting(){
+//   console.log("I am going to do all my tasks.");
 
-}
-//function call
-printCounting();
+// }
+// //function call
+// printCounting();
+
+// // we can write this line even above the function 
+// // Hoisting is the process of moving functions to the top of the file. It is done by JS engine.
+
+
+
+// //named function assignment
+// let stand = function walk(){
+//   console.log("Shivanshu");
+// };
+
+
+// //anonymous function assignment
+// let stand2 = function(){
+//   console.log("Shivanshu22");
+// };
+
+
+// stand();
+
+// // hoisting only works with function declaration, it does work with function assignment.
+
+// let jump = stand;
+
+// jump();
+
+
+//Dynamic language
+let x =1 ;
+x = 'a';
+
+console.log(x);
+
+function sum(a,b){
+  return a+b;
+};
+
+// console.log(sum('a','b'));
+// console.log(sum(1,'b'));
+// console.log(sum(1));
+console.log(sum(1,2,3,4,5));
+
+
+
 
 
 
