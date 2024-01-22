@@ -386,10 +386,15 @@
 
 
 
+let shiv = 'shiv';
+console.log(typeof(shiv));
 
 
 
+console.log('5'===5);
 
+let a ="123";
+console.log(Number(a));
 
 
 
