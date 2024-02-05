@@ -16,6 +16,19 @@
 // first.addEventListener('click',function(event){event.preventDefault();
 // console.log("mazza aaya");});
 
+let myDiv = document.createElement('div');
+
+for(let i =1;i<=100;i++){
+  let newElement= document.createElement('p');
+  newElement.textContent= 'This is para'+i;
+
+
+  newElement.addEventListener('click', function(event){console.log('I have clicked on paragraph');});
+
+  myDiv.appendChild(newElement);
+
+}
+document.appendChild(myDiv);
 
 
 
