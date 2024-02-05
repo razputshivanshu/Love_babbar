@@ -28,7 +28,7 @@ for(let i =1;i<=100;i++){
   myDiv.appendChild(newElement);
 
 }
-document.appendChild(myDiv);
+document.body.appendChild(myDiv);
 
 
 
