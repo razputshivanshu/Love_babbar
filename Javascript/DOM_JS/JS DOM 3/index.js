@@ -64,5 +64,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 // Call stack 
 // Js is a single threaded language means processing of one command at a time.
+
+function addPara(){
+  let para = document.createElement('p');
+  para.textContent='I am going to become the best developer.';
+  document.body.appendChild(para);
+}
+
+function appendNewMessage(){
+  let para = document.createElement('p');
+  para.textContent = 'I want to become a software developer at Google';
+  document.body.appendChild(para);
+
+}
+
+addPara();
+appendNewMessage();
+
+
