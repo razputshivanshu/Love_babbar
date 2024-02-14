@@ -65,4 +65,4 @@
 
 
 // Call stack 
-// Js is a single threaded language.
+// Js is a single threaded language means processing of one command at a time.
