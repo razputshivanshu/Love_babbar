@@ -52,27 +52,41 @@
 //Promise pura hozaayne ke baad tumhe kuch krna hai to then ka use kro
 // Promises ke andrr tum saare states ko handle krr paate ho
 
-let vaada1 = new Promise(function(resolve,reject){
-  setTimeout(() => {
-    console.log("Set Timeout 1 started");
-  }, 2000);
-  resolve(2000);
-});
 
-let output = vaada1.then(()=>{
-  let vaada2 = new Promise((resolve, reject) => {
-    setTimeout(()=>{
-      console.log("Set Timeout 2 started");
-    },4000);
-  })
-  //
-})
 
-output.then(()=>{
-  let vaada3 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Lo seekh gye hum arrow functions and promises");
+// ----- learn promises and arrow fucntion
+// let vaada1 = new Promise(function(resolve,reject){
+//   setTimeout(() => {
+//     console.log("Set Timeout 1 started");
+//   }, 2000);
+//   resolve(2000);
+// });
+
+// let output = vaada1.then(()=>{
+//   let vaada2 = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//       console.log("Set Timeout 2 started");
+//     },4000);
+   
+//   })
+//   //
+// })
+
+// output.then(()=>{
+//   let vaada3 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Lo seekh gye hum arrow functions and promises");
       
-    },6000);
-  })
-});
+//     },6000);
+//   })
+// });
+
+
+
+async function abcd(){
+  return 7;
+
+}
+
+//async function always returns a promise
+abcd();
