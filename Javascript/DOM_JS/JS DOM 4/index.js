@@ -59,14 +59,16 @@ let vaada1 = new Promise(function(resolve,reject){
   resolve(2000);
 });
 
-vaada1.then(()=>{
+let output = vaada1.then(()=>{
   let vaada2 = new Promise((resolve, reject) => {
     setTimeout(()=>{
       console.log("Set Timeout 2 started");
     },4000);
   })
   //
-}).then(()=>{
+})
+
+output.then(()=>{
   let vaada3 = new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("Lo seekh gye hum arrow functions and promises");
