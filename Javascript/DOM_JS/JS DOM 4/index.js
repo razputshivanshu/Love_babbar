@@ -83,10 +83,45 @@
 
 
 
-async function abcd(){
-  return 7;
+// async function abcd(){
+//   return 7;
 
-}
+// }
 
-//async function always returns a promise
-abcd();
+// //async function always returns a promise
+// abcd();
+
+
+
+// A simple program to learn 
+// async function utility(){
+
+
+
+// let himachal = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("Himachal mai to thand ho rhi hai");
+//   },1000);
+// });
+
+// // himachal.then(()=>{
+// //   setTimeout(()=>{
+// //     console.log("Chandigarh mai to grmii horhi hai guyzzz!!!!");
+// //   },1000);
+// // });
+
+// let Chandigarh = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("Chandigarh is too hot!!!");
+//   },5000);
+// });
+
+
+// let chdMausam = await Chandigarh;
+// let himMausam = await himachal;
+
+// return [chdMausam,himMausam];
+
+// }
+
+
