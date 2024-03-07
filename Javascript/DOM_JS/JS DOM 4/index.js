@@ -65,6 +65,7 @@ vaada1.then(()=>{
       console.log("Set Timeout 2 started");
     },4000);
   })
+  //
 }).then(()=>{
   let vaada3 = new Promise((resolve, reject) => {
     setTimeout(() => {
