@@ -20,6 +20,7 @@ let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
 //ste strength circle color to grey
+setIndicator("#ccc");
 
 
 //set passwordLength
@@ -27,11 +28,14 @@ function handleSlider() {
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
     //or kuch bhi karna chahiye ? - HW
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"
 }
 
 function setIndicator(color) {
     indicator.style.backgroundColor = color;
-    //shadow - HW
+    indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
 }
 
 function getRndInteger(min, max) {
@@ -78,27 +82,49 @@ function calcStrength() {
     }
 }
 
+// async function copyContent() {
+//     try {
+//         await navigator.clipboard.writeText(passwordDisplay.value);
+//         copyMsg.innerText = "copied";
+//     }
+//     catch(e) {
+//         copyMsg.innerText = "Failed";
+//     }
+//     //to make copy wala span visible
+//     copyMsg.classList.add("active");
+
+//     setTimeout( () => {
+//         copyMsg.classList.remove("active");
+//     },2000);
+
+// }
+
 async function copyContent() {
     try {
         await navigator.clipboard.writeText(passwordDisplay.value);
-        copyMsg.innerText = "copied";
+        showPopup("Copied");
     }
     catch(e) {
-        copyMsg.innerText = "Failed";
+        showPopup("Failed to copy");
     }
-    //to make copy wala span visible
-    copyMsg.classList.add("active");
+}
 
-    setTimeout( () => {
-        copyMsg.classList.remove("active");
-    },2000);
+function showPopup(message) {
+    const popup = document.getElementById('popup');
+    popup.innerText = message;
+    popup.classList.add('active');
 
+    setTimeout(() => {
+        popup.classList.remove('active');
+    }, 2000);
 }
 
 function shufflePassword(array) {
     //Fisher Yates Method
     for (let i = array.length - 1; i > 0; i--) {
+        //random J, find out using random function
         const j = Math.floor(Math.random() * (i + 1));
+        //swap number at i index and j index
         const temp = array[i];
         array[i] = array[j];
         array[j] = temp;
