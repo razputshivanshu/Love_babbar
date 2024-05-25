@@ -37,8 +37,64 @@
             </form>
         </div>
 
+        <!-- loading screen container -->
+        <div class="loading-container">
+            <img src="assets/loading.gif" alt="" width="150" height="150">
+            <p>Loading</p>
+        </div>
 
-        
+
+        <!-- Weather Information Show UI Main UI -->
+        <!-- Show weather info : Going to be used in search and also in current section-->
+
+        <div class="user-info-container">
+            <!-- City name and flag -->
+            <div class="name">
+                <p data-cityName></p>
+                <img data-countryIcon>
+            </div>
+            <!-- Weather Description -->
+            <p data-weatherDesc></p>
+            <!-- Weather iCon -->
+            <img data-weatherIcon>
+            <!-- Temp -->
+            <p data-temp></p>
+
+            <!-- Final 3 cards div -->
+            <div class="parameter-container">
+                <!-- 1card -->
+                <div class="parameter">
+                    <img src="assets/wind.png" alt="">
+                    <p>Windspeed</p>
+                    <p data-windspeed></p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="parameter">
+                    <img src="assets/humidity.png" alt="">
+                    <p>Humidity</p>
+                    <p data-humidity></p>
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div class="parameter">
+                    <img src="assets/cloud.png" alt="">
+                    <p>Clouds</p>
+                    <p data-cloudiness></p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
     </div>
     
     <script src="index.js"></script>
